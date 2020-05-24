@@ -1,0 +1,517 @@
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #FFFFFF;
+  color: #000000;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+.img1 { background-image: url(../img/background.jpg); }
+.img2 { background-image: url(../img/code_background.jpg);}
+.img3 { background-image: url(../img/education_image.jpg);}
+.img4 { background-image: url(../img/seminar_image.jpg);}
+.img5 { background-image: url(../img/contact_image.jpg);}
+  body#bg-img {
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #FFFFFF; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); }
+
+a {
+  color: #000000;
+  text-decoration: none; }
+
+.text-mini-heading{
+  font-size: 22px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 3px solid #6200EE;
+}
+
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #6200EE;
+ }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #6200EE;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio';
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #6200EE 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+
+
+    
+/*-----------------Skills---------------------*/
+
+
+
+.skillsPage {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'skill1 skill2 skill3';
+  grid-template-columns: repeat(3, 1fr); }
+  
+
+  .skillsPage .skill-1 {
+    grid-area: skill1; }
+  .skillsPage .skill-2 {
+    grid-area: skill2; }
+  .skillsPage .skill-3 {
+    grid-area: skill3; }
+  .skillsPage .skill {
+    background: #FFFFFF;
+    font-family: monospace;
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 18px;
+    border-bottom: #6200EE 5px solid; }
+/*------------End of Skills---------------------*/
+
+
+
+
+
+/*------------------Projects------------------*/
+
+.project-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'projectImage1 projectImage2 projectDetail';
+  grid-template-columns: repeat(3, 1fr); }
+  
+  .project-info .project-image-1 {
+    grid-area: projectImage1;
+    width: 80%;
+    margin: auto;
+   }
+
+   .project-info .project-image-2 {
+    grid-area: projectImage2;
+    width: 80%;
+    margin: auto;
+   }
+
+   .project-info .project-image-3 {
+    grid-area: projectImage2;
+    width: 80%;
+    margin: auto;
+   }
+
+  
+  .project-info .project-detail {
+    background: #FFFFFF;
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 20px;
+    }
+
+.customButton {
+    color: #fff ;
+    background: #6200EE;
+    padding: 20px;
+    border-radius: px;
+    display: inline-block;
+    border: none;
+}
+.customButton:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.project-mini-info {
+  display: grid;
+  grid-gap: 30px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-template-areas: 'projectDetail projectImage';
+  grid-template-columns: repeat(3, 1fr); }
+
+  .project-mini-info:hover {
+    background-color: #A2A2A2;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+  }
+
+
+.project-mini-info .project-image {
+    grid-area: projectImage;
+    width: 80%;
+    margin: auto;
+   }
+
+   .project-info .project-mini-detail {
+    background: #FFFFFF;
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 20px;
+    }
+
+
+    .projectGrid {
+      display: grid;
+      grid-gap: 30px;
+      padding: 5px;
+      grid-template-areas: 'project-mini-info1 project-mini-info2 project-mini-info3 project-mini-info4 project-mini-info5';
+      grid-template-columns: repeat(3, 1fr); }
+
+      .projectGrid .project-image-1{
+        grid-area: project-mini-info1;
+      }
+
+      .projectGrid .project-image-2{
+        grid-area: project-mini-info2;
+      }
+
+      .projectGrid .project-image-3{
+        grid-area: project-mini-info3;
+      }
+
+      .projectGrid .project-image-4{
+        grid-area: project-mini-info4;
+      }
+
+      .projectGrid .project-image-5{
+        grid-area: project-mini-info5;
+      }
+
+/*------------------End of Projects------------*/
+
+
+
+
+/*-------------Education ----------------*/
+.coursePage {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'collegeDetails courseworkHeading courseList1 courseList2 courseList3';
+  grid-template-columns: repeat(3, 1fr); }
+
+  .coursePage .college-details{
+    grid-area: collegeDetails;
+    font-size: 20px;
+  }
+
+  .coursePage .coursework-heading{
+    grid-area: courseworkHeading;
+    padding-top: 50%;
+    color: #6200EE;
+    font-family: monospace;
+    font-size: 20px;
+  }
+
+  .coursePage .courseList-1 {
+    grid-area: courseList1; }
+  .coursePage .courseList-2 {
+    grid-area: courseList2; }
+  .coursePage .courseList-3 {
+    grid-area: courseList3; }
+  .coursePage .courseList {
+    background: #FFFFFF;
+    font-family: monospace;
+    font-size: 18px;
+    list-style: none;
+    padding: 0.5rem;
+    border-bottom: #6200EE 5px solid; }
+
+    .courseList:hover {
+      background-color: #A2A2A2;
+      letter-spacing: 1px;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+      transition: all 0.4s ease 0s;
+    }
+
+
+/*-------------End of Education ----------------*/
+
+/*-------------------Online courses--------------*/
+.othercoursePage {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'othercourseList1 othercourseList2';
+  grid-template-columns: repeat(2, 1fr); }
+
+  
+  .othercoursePage .othercourseList-1 {
+    grid-area: othercourseList1; }
+  .othercoursePage .othercourseList-2 {
+    grid-area: othercourseList2; }
+  
+  .othercoursePage .othercourseList {
+    background: #FFFFFF;
+    font-family: monospace;
+    font-size: 18px;
+    list-style: none;
+    padding: 0.5rem;
+    border-bottom: #6200EE 5px solid; }
+
+    .othercourseList:hover {
+      background-color: #A2A2A2;
+      letter-spacing: 1px;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+      transition: all 0.4s ease 0s;
+    }
+
+
+
+
+
+
+
+
+/*------------End of online courses------------*/
+
+
+
+
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #6200EE;
+      transition: all 0.5s ease-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1.5rem;
+    border: 2px #fff solid;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #6200EE;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #6200EE;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); }
+
+    .projectGrid {
+      grid-template-columns: repeat(5,5fr); }
+    
+   }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } 
+
+    .projectGrid {
+      grid-template-columns: repeat(2,2fr); }
+
+  }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../img/portrait_small.jpg");
+      width: 150px;
+      height: 150px; }
+      .about-info {
+        grid-template-areas: 'bioimage' 'bio';
+        grid-template-columns: 1fr; }
+  
+  .skillsPage {
+    grid-template-areas: 'skill1' 'skill2' 'skill3';
+    grid-template-columns: 1fr; }
+    
+
+.coursePage {
+    grid-template-areas: 'collegeDetails' 'courseworkHeading' 'courseList1' 'courseList2' 'courseList3';
+    grid-template-columns: 1fr; }
+    
+
+    .othercoursePage {
+      grid-template-areas: 'othercourseList1' 'othercourseList2';
+      grid-template-columns: 1fr; }
+
+    .project-info {
+      grid-template-areas: 'projectImage1' 'projectImage2' 'projectDetail' 'projectImage3';
+      grid-template-columns: 1fr; }
+      
+    .project-mini-info {
+      grid-template-areas: 'projectDetail' 'projectImage';
+      grid-template-columns: 1fr; }
+      
+
+      .projectGrid {
+        grid-template-areas: 'project-mini-info1' 'project-mini-info2' 'project-mini-info3' 'project-mini-info4' 'project-mini-info5';
+        grid-template-columns: 1fr; }
+
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
+  .projects {
+    grid-template-columns: 1fr; } }
+
+
+
+
+    /* Boxes small for social media icons */
+    .boxesSmall {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 0.5rem; }
+      .boxesSmall div {
+        font-size: 0.75rem;
+        font-family: monospace;
+        border: 3px #6200EE solid;
+        padding: 0.5rem 0.5rem;
+        margin-bottom: 3rem;
+        transition: all 0.5s ease-out; }
+        .boxesSmall div:hover {
+          padding: 0.5rem 1.5rem;
+          background: #6200EE;
+          color: #000; }
+          .boxesSmall div:hover span {
+            color: #000; }
+            .boxesSmall div:hover a{
+              color: #FFFFFF;
+            }
+
+
+  .quotePurple{
+    color: #6200EE;
+}
+
+
+
+
+
+
+

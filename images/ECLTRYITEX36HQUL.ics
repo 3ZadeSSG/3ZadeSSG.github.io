@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Calendly//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20200407T204002Z
+UID:calendly-112602921
+DTSTART:20200415T053000Z
+DTEND:20200415T063000Z
+CLASS:PRIVATE
+DESCRIPTION:Event Name: Meeting with Exhibitor \nEvent Description: Meeting
+  request form visitor to schedule a meeting with exhibitor\nDate & Time: 1
+ 1:00am - 12:00pm (India Standard Time) on Wednesday\, April 15\, 2020\n\nN
+ eed to make changes to this event?\nCancel: https://calendly.com/cancellat
+ ions/ECLTRYITEX36HQUL\nReschedule: https://calendly.com/reschedulings/ECLT
+ RYITEX36HQUL\n
+SUMMARY:Meeting with Exhibitor  with Manu Gond
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
