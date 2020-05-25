@@ -141,7 +141,7 @@ function loadProgramming(){
     <li>\
     <span><img src=\"img/skills/"+iconLocation[i]+"\" style=\"width: 45px;vertical-align:middle\">"+languageArray[i]+"</span>\
     <span class=\"cssProgress-label\" style=\"float: right;\">"+percentage[i]+"%</span>\
-    <div id=\"example-"+i+"\" class=\"examples\" style=\"width: 350px;\">\
+    <div id=\"example-"+i+"\" class=\"examples\" style=\"width: 280px;\">\
       <div class=\"cssProgress\">\
         <div class=\"progress1\">\
           <div class=\"cssProgress-bar cssProgress-"+color[i]+" cssProgress-stripes\" data-percent=\""+percentage[i]+"\" style=\"width: 300px;\">\
@@ -177,7 +177,7 @@ function loadTools(){
      <li>\
      <span><img src=\"img/skills/"+iconLocation[i]+"\" style=\"width: 45px;vertical-align:middle;\">"+languageArray[i]+"</span>\
      <span class=\"cssProgress-label\" style=\"float: right;\">"+percentage[i]+"%</span>\
-     <div id=\"exampleTool-"+i+"\" class=\"examples\" style=\"width: 350px;\">\
+     <div id=\"exampleTool-"+i+"\" class=\"examples\" style=\"width: 280px;\">\
        <div class=\"cssProgress\">\
          <div class=\"progress1\">\
            <div class=\"cssProgress-bar cssProgress-"+color[i]+" cssProgress-stripes\" data-percent=\""+percentage[i]+"\" style=\"width: 300px;\">\
@@ -211,7 +211,7 @@ function loadCS(){
      var test = "\
      <li>\
      <span>"+languageArray[i]+"</span><span class=\"cssProgress-label\" style=\"float: right;\">"+percentage[i]+"%</span>\
-     <div id=\"exampleCS-"+i+"\" class=\"examples\" style=\"width: 350px;\">\
+     <div id=\"exampleCS-"+i+"\" class=\"examples\" style=\"width: 280px;\">\
        <div class=\"cssProgress\">\
          <div class=\"progress1\">\
            <div class=\"cssProgress-bar cssProgress-"+color[i]+" cssProgress-stripes\" data-percent=\""+percentage[i]+"\" style=\"width: 300px;\">\

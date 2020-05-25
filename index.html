@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <header>
       <div class="header" id="myHeader">
-        <p><button id="buttonHome">Home</button><button id="buttonSkills">Skills</button><button id="buttonAcademic">Acedemic</button><button id="buttonProjects"> Projects</button><button>Contact Me</button></p>
+        <p><button id="buttonHome">Home</button><button id="buttonSkills">Skills</button><button id="buttonAcademic">Acedemic</button><button id="buttonProjects"> Projects</button></p>
       </div>
   </header>
 </head>
@@ -16,17 +16,13 @@
 
 
   <div class="section1">
-    <h1 style="text-align: center;">Hello there thanks for passing by...</h1>
-    <br>
-    <br>
-    <h2 style="text-align: center;color: #dd9fff;font-weight: lighter;margin-left: 10%;margin-right: 10%;">Chances are you came here from one of my Social media profile or maybe followed my resume's link. If you came from my resume link, I really appreciate that you took time to look this Portfolio, scroll down to find out more</h2>
-    <br>
-    <br>
-    <div class="container">
       <!---------- Intro ----------->
-        <main>
+          <div class="block0">
+            <h1 style="text-align: center;">Hello there thanks for passing by...</h1>
+            <h2 style="text-align: center;color: #dd9fff;font-weight: lighter;margin-left: 10%;margin-right: 10%;">Chances are you came here from one of my Social media profile or maybe followed my resume's link. If you came from my resume link, I really appreciate that you took time to look this Portfolio, scroll down to find out more</h2>
+          </div>
           <div class="block1">
-              <img src="img/portrait.jpg">
+              <p><img src="img/portrait.jpg"></p>
           </div>
           <div class="block2">
             <h3 style="font-size: 26px;text-align: center;">Manu Gond</h3>
@@ -35,61 +31,35 @@
             <p>A M.Sc CS Graduate from University of Calcutta (Kolkata, India)</p>
             <p>I am a Machine Learning Engineer and Backend Developer</p>
           </div>
-      </main>
       <!---------- Intro End ----------->
 
       <!---------- Social Media Profiles ----------->
-      <div class="socialMedia">
-        <a href="https://github.com/3ZadeSSG">
+
           <div class="social_block0">
+            <a href="https://github.com/3ZadeSSG">
               <img src="img/github.svg" class="social_image">
               <p style="text-align: center;">GitHub</p>
+            </a>
           </div>
-        </a>
 
 
-        <a href="https://www.linkedin.com/in/manu-gond-88a513116/">
           <div class="social_block1">
+            <a href="https://www.linkedin.com/in/manu-gond-88a513116/">
               <img src="img/linkedin.svg" class="social_image">
               <p style="text-align: center;">LinkedIn</p>
+            </a>
           </div>
-        </a>
-
-        <a href="https://stackoverflow.com/users/6320809/manu-gond">
-          <div class="social_block2">
-            <img src="img/stackoverflow.svg" class="social_image">
-            <p style="text-align: center;">Stackoverflow</p>
-          </div>
-        </a>
-
-        <a href="https://www.instagram.com/3zade_ssg/">
-        <div class="social_block4">
-          <img src="img/instagram.svg" class="social_image">
-          <p style="text-align: center;">Instagram</p>
-        </div>
-        </a>
 
 
-        <a href="https://twitter.com/3Zade_SSG">
-        <div class="social_block5">
-          <img src="img/twitter.svg" class="social_image">
-          <p style="text-align: center;">Twitter</p>
-        </div>
-        </a>
-
-        <a href="mailto:manugond45@gmail.com">
         <div class="social_block6">
+          <a href="mailto:manugond45@gmail.com">
           <img src="img/gmail.svg" class="social_image">
           <p style="text-align: center;">Email</p>
+          </a>
         </div>
-        </a>
 
-
-      </div>
-      <!---------- Social Media End ----------->
-      <p style="text-align: center"><img src="img/arrow-down.svg" id="scrollSkills" class="nextSection"></p>
-    </div>
   </div>
+  <p style="text-align: center"><img src="img/arrow-down.svg" id="scrollSkills" class="nextSection"></p>
 
 
 
@@ -262,11 +232,11 @@
   </div>
 
   <!--------------------------------------->
-  <div class="projectBlock" id="projectBlock-1" style="width: 750px;">
+  <div class="projectBlock" id="projectBlock-1">
     <h2>1. Movie Recommender System with Sentiment Analysis and IB Filter</h2>
     <p>A movie recommendation system using combination of twitter sentiment analysis and content based filter. Trained model was deployed on Google Cloud App Engine and Flask REST API was used to connect requests from android app. I designed basic functionality of login and signup using firebase and saved the user's metadata on cloud bucket.</p>
-    <img src="img/projects/recommendation_explore.png" height="550px">
-    <img src="img/projects/recommendation_dislike.png" height="550px">
+    <img src="img/projects/recommendation_explore.png" height="300px">
+    <img src="img/projects/recommendation_dislike.png" height="300px">
     <p style="text-align: center;"><button src="https://github.com/3ZadeSSG/ContentBased-Movie-Recommendation-using-Sentiment-Analysis">GitHub</button></p>
   </div>
   <!--------------------------------------->

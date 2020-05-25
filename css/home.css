@@ -6,7 +6,6 @@ body{
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     background-color: #1F1B24;
     color: #fff;
-    min-width: 700px;
 }
 
 a {
@@ -28,7 +27,7 @@ a {
 
 .header button{
   color: #fff;
-  width: 100px;
+  width: 90px;
   height: 50px;
   border-radius: 0px;
   margin: 5px;
@@ -154,29 +153,39 @@ button:hover{
 /*======================================================================================*/
 /*=================================== Main Intro Section ===============================*/
 /*======================================================================================*/
-main{
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    min-width: 700px;
-    width: 700px;
-    height: 200px;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    display:grid;
-    background-color: #332940;
-    grid-template-columns: 200px 250px 250px;
-    grid-template-rows: 100px 100px;
-    grid-template-areas: "block1 block2 block2"
-    "block1 block3 block3";
-    border-radius: 7px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    margin: auto;
+.section1{
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  min-width: 300px;
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  display:grid;
+  background-color: #332940;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas: "block0"
+    "block1"
+    "block2"
+    "block3"
+    "social_block0"
+    "social_block1"
+    "social_block6";
+  border-radius: 7px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin: auto;
 }
-main:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+.section1:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+.block0{
+  grid-area: block0;
+  text-align: center;
+}
+
 .block1{
     grid-area: block1;
+    text-align: center;
 }
 .block1 img{
     width: 200px;
@@ -192,67 +201,25 @@ main:hover{
     grid-area: block3;
     text-align: center;
 }
-
-
-
-/*=====================Social Media ======================*/
-.socialMedia{
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  min-width: 700px;
-  width: 700px;
-  height: 100px;
-  margin-top: 10px;
-  display:grid;
-  background-color: #332940;
-  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
-  grid-template-rows: 100px;
-  grid-template-areas: "social_block0 social_block1 social_block2 social_block4 social_block5 social_block6";
-  border-radius: 7px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  text-align: center;
-  margin: auto;
-}
 .socialMedia:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .social_block0{
   grid-area: social_block0;
-  padding: 5px;
   cursor: pointer;
+  text-align: center;
 }
 
 .social_block1{
   grid-area: social_block1;
-  padding: 5px;
   cursor: pointer;
-}
-.social_block2{
-  grid-area: social_block2;
-  padding: 5px;
-  cursor: pointer;
-}
-.social_block3{
-  grid-area: social_block3;
-  padding: 5px;
-  cursor: pointer;
-}
-.social_block4{
-  grid-area: social_block4;
-  padding: 5px;
-  cursor: pointer;
-}
-.social_block5{
-  grid-area: social_block5;
-  padding: 5px;
-  cursor: pointer;
+  text-align: center;
 }
 .social_block6{
   grid-area: social_block6;
-  padding: 5px;
   cursor: pointer;
+  text-align: center;
 }
-
 .social_image{
   width: 30px;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -270,26 +237,399 @@ main:hover{
   color: #943BD3;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-.social_block2:hover{
-  color: #943BD3;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-.social_block3:hover{
-  color: #943BD3;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-.social_block4:hover{
-  color: #943BD3;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-.social_block5:hover{
-  color: #943BD3;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
 .social_block6:hover{
   color: #943BD3;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
+/*======================================================================================*/
+/*=================================== Skill Section ====================================*/
+/*======================================================================================*/
+.skillsBox{
+  width: 300px;
+  border: 2px solid #6000a1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: box-shadow 0.3s;
+  margin: auto;
+}
+.skillsBox:hover{
+  -webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+-moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+}
+
+
+.section2{
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "skillBlock-0"
+  "skillBlock-1"
+  "skillBlock-2"
+  "skillBlock-3";
+  margin: auto;
+}
+.skillBlock-1{
+  grid-area: skillBlock-1;
+  margin: 50px;
+}
+.skillBlock-2{
+  grid-area: skillBlock-2;
+  margin: 50px;
+}
+.skillBlock-3{
+  grid-area: skillBlock-3;
+  margin: 50px;
+}
+.skillBlock-0{
+  grid-area: skillBlock-0;
+  margin: 50px;
+}
+.skillBlock-1 .skillsBox{
+  height: auto;
+}
+.skillBlock-2 .skillsBox{
+  height: auto;
+}
+.skillBlock-3 .skillsBox{
+  height: auto;
+}
+/*=========================== Education Box =======================*/
+/*=========================== Education Box =======================*/
+/*=========================== Education Box =======================*/
+.section3{
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "educationBlock-0"
+  "educationBlock-1"
+  "educationBlock-2"
+  "educationBlock-3";
+  margin: auto;
+}
+.educationBlock-1{
+  grid-area: educationBlock-1;
+  margin: 50px;
+}
+.educationBlock-2{
+  grid-area: educationBlock-2;
+  margin: 50px;
+}
+.educationBlock-3{
+  grid-area: educationBlock-3;
+  margin: 50px;
+}
+.educationBlock-0{
+  grid-area: educationBlock-0;
+  margin: 50px;
+}
+.educationBlock-1 .skillsBox{
+  height: auto;
+  transition: box-shadow 0.3s;
+}
+.educationBlock-2 .skillsBox{
+  height: auto;
+}
+.educationBlock-3 .skillsBox{
+  height: auto;
+
+}
+.educationul {
+  list-style: none;
+  padding: 0;
+}
+.educationul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+.educationul .inner.show {
+  /*display: block;*/
+}
+.educationul li {
+  margin: 0.5em 0;
+}
+.toggle{
+  color: #fff;
+  width: 300px;
+  height: 50px;
+  border-radius: 0px;
+  margin: 5px;
+}
+/*==============================================================*/
+.educationul img{
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+  -moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+  box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+}
+/*==============================================================*/
+
+.projectBlock{
+  margin: auto;
+  text-align: center;
+  width: 300px;
+  border: 2px solid rgba(148,59,211,1);
+  transition: box-shadow 0.3s;
+}
+.projectBlock:hover{
+  -webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+-moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+}
+
+
+.projectBlock button{
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border: 2px solid rgba(148,59,211,1);
+  border-radius: 0px;
+  color: #fff;
+}
+
+.projectBlock img{
+  margin: 25px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+  -moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+  box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
+}
+
+/*============== Project Block ================*/
+/*============== Project Block ================*/
+/*============== Project Block ================*/
+
+.section4{
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "projectBlock-0"
+  "projectBlock-1"
+  "projectBlock-2"
+  "projectBlock-3"
+  "projectBlock-4";
+  margin: auto;
+}
+#projectBlock-0{
+  grid-area: projectBlock-0;
+  margin: 50px;
+}
+#projectBlock-1{
+  grid-area: projectBlock-1;
+  margin: 50px;
+}
+#projectBlock-2{
+  grid-area: projectBlock-2;
+  margin: 50px;
+}
+#projectBlock-3{
+  grid-area: projectBlock-3;
+  margin: 50px;
+}
+#projectBlock-4{
+  grid-area: projectBlock-4;
+  margin: 50px;
+}
+
+
+/*===============Tablets==============*/
+/*===============Tablets==============*/
+/*===============Tablets==============*/
+@media only screen and (min-width: 820px){
+  /*========================================================================*/
+  /*============================== Section 1 ===============================*/
+  /*========================================================================*/
+  .section1{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    min-width: 820px;
+    width: 70%;
+    height: auto;
+    display:grid;
+    background-color: #332940;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "block0 block0 block0"
+      "block1 block2 block2"
+      "block1 block3 block3"
+      "social_block0 social_block1 social_block6";
+    border-radius: 7px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin: auto;
+  }
+  /*========================================================================*/
+  /*============================== Section 2 ===============================*/
+  /*========================================================================*/
+  .section2{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    min-width: 820px;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "skillBlock-0 skillBlock-0"
+    "skillBlock-1 skillBlock-2"
+    "skillBlock-3 skillBlock-3";
+    margin: auto;
+  }
+  /*========================================================================*/
+  /*============================== Section 3 ===============================*/
+  /*========================================================================*/
+  .section3{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    min-width: 820px;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "educationBlock-0 educationBlock-0"
+    "educationBlock-1 educationBlock-2"
+    "educationBlock-3 educationBlock-3";
+    margin: auto;
+  }
+  /*========================================================================*/
+  /*============================== Section 4 ===============================*/
+  /*========================================================================*/
+  .section4{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    min-width: 820px;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "projectBlock-0 projectBlock-0"
+    "projectBlock-1 projectBlock-2"
+    "projectBlock-1 projectBlock-3"
+    "projectBlock-1 projectBlock-4";
+    margin: auto;
+  }
+  #projectBlock-1{
+    width: 450px;
+    height: auto;
+  }
+  #projectBlock-1 img{
+    width: 150px;
+  }
+
+
+
+}
+
+
+/*===============Dekstop OR Laptop==============*/
+/*===============Dekstop OR Laptop==============*/
+/*===============Dekstop OR Laptop==============*/
+@media only screen and (min-width: 1200px){
+  /*=======================================================================*/
+  /*============================== Section 1 ===============================*/
+  /*========================================================================*/
+
+  /*========================================================================*/
+  /*============================== Section 2 ===============================*/
+  /*========================================================================*/
+  .section2{
+    min-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "skillBlock-0 skillBlock-0 skillBlock-0"
+    "skillBlock-1 skillBlock-2 skillBlock-3";
+    margin: auto;
+  }
+  /*========================================================================*/
+  /*============================== Section 3 ===============================*/
+  /*========================================================================*/
+  .section3{
+    min-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "educationBlock-0 educationBlock-0 educationBlock-0"
+    "educationBlock-1 educationBlock-2 educationBlock-3";
+    margin: auto;
+  }
+  /*========================================================================*/
+  /*============================== Section 4 ===============================*/
+  /*========================================================================*/
+  .section4{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    min-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "projectBlock-0 projectBlock-0"
+    "projectBlock-1 projectBlock-2"
+    "projectBlock-1 projectBlock-3"
+    "projectBlock-1 projectBlock-4";
+    margin: auto;
+  }
+  #projectBlock-1{
+    width: 800px;
+    height: auto;
+  }
+  #projectBlock-1 img{
+    width: 300px;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -429,419 +769,12 @@ main:hover{
 
 
 
-/*======================================================================================*/
-/*=================================== Skill Section ====================================*/
-/*======================================================================================*/
-
-.skillsBox{
-  width: 400px;
-  border: 2px solid #6000a1;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  transition: box-shadow 0.3s;
-}
-.skillsBox:hover{
-  -webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
--moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-}
-
-
-.section2{
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  min-width: 500px;
-  width: 100%;
-  height: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "skillBlock-0"
-  "skillBlock-1"
-  "skillBlock-2"
-  "skillBlock-3";
-  margin: auto;
-}
-.skillBlock-1{
-  grid-area: skillBlock-1;
-  margin: auto;
-}
-.skillBlock-2{
-  grid-area: skillBlock-2;
-  margin: auto;
-}
-.skillBlock-3{
-  grid-area: skillBlock-3;
-  margin: auto;
-}
-.skillBlock-0{
-  grid-area: skillBlock-0;
-  margin: auto;
-}
-.skillBlock-1 .skillsBox{
-  height: auto;
-}
-.skillBlock-2 .skillsBox{
-  height: auto;
-}
-.skillBlock-3 .skillsBox{
-  height: auto;
-}
-/*=============== Tablet ==========*/
-@media only screen and (min-width: 886px){
-  .section2{
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    min-width: 700px;
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display:grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "skillBlock-0 skillBlock-0"
-    "skillBlock-1 skillBlock-2"
-    "skillBlock-3 skillBlock-3";
-    margin: auto;
-  }
-  .skillBlock-1{
-    grid-area: skillBlock-1;
-    margin: auto;
-  }
-  .skillBlock-2{
-    grid-area: skillBlock-2;
-    margin: auto;
-  }
-  .skillBlock-3{
-    grid-area: skillBlock-3;
-    margin: auto;
-  }
-  .skillBlock-0{
-    grid-area: skillBlock-0;
-    margin: auto;
-  }
-  .skillBlock-1 .skillsBox{
-    height: auto;
-  }
-  .skillBlock-2 .skillsBox{
-    height: auto;
-  }
-  .skillBlock-3 .skillsBox{
-    height: auto;
-  }
-}
-
-
-@media only screen and (min-width: 1366px){
-  .section2{
-    min-width: 700px;
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "skillBlock-0 skillBlock-0 skillBlock-0"
-    "skillBlock-1 skillBlock-2 skillBlock-3";
-    margin: auto;
-  }
-  .skillBlock-1{
-    grid-area: skillBlock-1;
-  }
-  .skillBlock-2{
-    grid-area: skillBlock-2;
-  }
-  .skillBlock-3{
-    grid-area: skillBlock-3;
-  }
-  .skillBlock-0{
-    grid-area: skillBlock-0;
-  }
-  .skillBlock-1 .skillsBox{
-    height: auto;
-  }
-  .skillBlock-2 .skillsBox{
-    height: auto;
-  }
-  .skillBlock-3 .skillsBox{
-    height: auto;
-  }
-
-}
-
-
-
-/*=========================== Education Box =======================*/
-/*
--webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
--moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-*/
-
-.section3{
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  min-width: 500px;
-  width: 100%;
-  height: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "educationBlock-0"
-  "educationBlock-1"
-  "educationBlock-2"
-  "educationBlock-3";
-  margin: auto;
-}
-.educationBlock-1{
-  grid-area: educationBlock-1;
-  margin: auto;
-}
-.educationBlock-2{
-  grid-area: educationBlock-2;
-  margin: auto;
-}
-.educationBlock-3{
-  grid-area: educationBlock-3;
-  margin: auto;
-}
-.educationBlock-0{
-  grid-area: educationBlock-0;
-  margin: auto;
-}
-.educationBlock-1 .skillsBox{
-  height: auto;
-  transition: box-shadow 0.3s;
-}
-.educationBlock-2 .skillsBox{
-  height: auto;
-}
-.educationBlock-3 .skillsBox{
-  height: auto;
-
-}
-
-
-
-
-/*=============== Tablet ==========*/
-@media only screen and (min-width: 886px){
-  .section3{
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    min-width: 700px;
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display:grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "educationBlock-0 educationBlock-0"
-    "educationBlock-1 educationBlock-2"
-    "educationBlock-3 educationBlock-3";
-    margin: auto;
-  }
-  .educationBlock-1{
-    grid-area: educationBlock-1;
-    margin: auto;
-  }
-  .educationBlock-2{
-    grid-area: educationBlock-2;
-    margin: auto;
-  }
-  .educationBlock-3{
-    grid-area: educationBlock-3;
-    margin: auto;
-  }
-  .educationBlock-0{
-    grid-area: educationBlock-0;
-    margin: auto;
-  }
-  .educationBlock-1 .skillsBox{
-    height: auto;
-  }
-  .educationBlock-2 .skillsBox{
-    height: auto;
-  }
-  .educationBlock-3 .skillsBox{
-    height: auto;
-  }
-}
-
-
-@media only screen and (min-width: 1366px){
-  .section3{
-    min-width: 700px;
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "educationBlock-0 educationBlock-0 educationBlock-0"
-    "educationBlock-1 educationBlock-2 educationBlock-3";
-    margin: auto;
-  }
-  .educationBlock-1{
-    grid-area:educationBlock-1;
-  }
-  .educationBlock-2{
-    grid-area: educationBlock-2;
-  }
-  .educationBlock-3{
-    grid-area: educationBlock-3;
-  }
-  .educationBlock-0{
-    grid-area: educationBlock-0;
-  }
-  .educationBlock-1 .skillsBox{
-    height: auto;
-  }
-  .educationBlock-2 .skillsBox{
-    height: auto;
-  }
-  .educationBlock-3 .skillsBox{
-    height: auto;
-  }
-
-}
-
-
-
-.educationul {
-  list-style: none;
-  padding: 0;
-}
-.educationul .inner {
-  padding-left: 1em;
-  overflow: hidden;
-  display: none;
-}
-.educationul .inner.show {
-  /*display: block;*/
-}
-.educationul li {
-  margin: 0.5em 0;
-}
-
-.toggle{
-  color: #fff;
-  width: 350px;
-  height: 50px;
-  border-radius: 0px;
-  margin: 5px;
-}
-
-/*==============================================================*/
-.educationul img{
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-  -moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-  box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-}
-/*==============================================================*/
-
-.projectBlock{
-  margin: auto;
-  text-align: center;
-  width: 400px;
-  border: 2px solid rgba(148,59,211,1);
-  transition: box-shadow 0.3s;
-}
-.projectBlock:hover{
-  -webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
--moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-}
-
-
-.projectBlock button{
-  cursor: pointer;
-  width: 150px;
-  height: 50px;
-  border: 2px solid rgba(148,59,211,1);
-  border-radius: 0px;
-  color: #fff;
-}
-
-.projectBlock img{
-  margin: 25px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-  -moz-box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-  box-shadow: 0px 0px 26px 1px rgba(148,59,211,1);
-}
 
 
 
 
 
-/*============== Project Block ================*/
-/*============== Project Block ================*/
-/*============== Project Block ================*/
 
-.section4{
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  min-width: 500px;
-  width: 100%;
-  height: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "projectBlock-0"
-  "projectBlock-1"
-  "projectBlock-2"
-  "projectBlock-3"
-  "projectBlock-4";
-  margin: auto;
-}
-#projectBlock-0{
-  grid-area: projectBlock-0;
-  margin: auto;
-}
-#projectBlock-1{
-  grid-area: projectBlock-1;
-  margin: auto;
-}
-#projectBlock-2{
-  grid-area: projectBlock-2;
-  margin: auto;
-}
-#projectBlock-3{
-  grid-area: projectBlock-3;
-  margin: auto;
-}
-#projectBlock-4{
-  grid-area: projectBlock-4;
-  margin: auto;
-}
-
-/*=============== Tablet ==========*/
-@media only screen and (min-width: 1200px){
-  .section4{
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-    min-width: 700px;
-    width: 100%;
-    height: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display:grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "projectBlock-0 projectBlock-0"
-    "projectBlock-1 projectBlock-2"
-    "projectBlock-1 projectBlock-3"
-    "projectBlock-1 projectBlock-4";
-    margin: auto;
-  }
-}
 
 
 
@@ -919,7 +852,7 @@ ul{
 
 
 .cssProgress {
-  width: 100%;
+  width: 80%;
   margin-bottom: 10px;
 }
 .cssProgress .progress1,
