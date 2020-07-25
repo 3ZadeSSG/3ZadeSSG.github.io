@@ -13,6 +13,11 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
+.france{ 
+  height: 10px;
+  width: 20px;
+  background:linear-gradient(to right, #002495 0, #002495 33%, #FFF 33%, #FFF 66%, #ed2939 66%, #ed2939 100%); 
+} 
 /*===================================*/
 /* Style the header */
 .header {
