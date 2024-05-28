@@ -15,29 +15,19 @@
       card.style.backgroundImage = `url(${image})`;
 
       card.addEventListener('click', function() {
-        var is12KResolution = $('#resolution-switch').prop('checked');
-        if (is12KResolution){
-            var currentUrl = window.location.href;
-            var newUrl = currentUrl + "scene12k/"+index;
-            window.location.href = newUrl;
-        }
-        else{
-            var currentUrl = window.location.href;
-            var newUrl = currentUrl + "scene/"+index;
-            window.location.href = newUrl;
-        }
+        var currentUrl = window.location.href;
+        currentUrl = currentUrl.replace("SLFDB.html","")
+        console.log("Current URL"+currentUrl);
+        var newUrl = currentUrl + "/scene_"+index+".html";
+        window.location.href = newUrl;
       });
 
       const centeredText = document.createElement('div');
       centeredText.classList.add('centered-text');
       centeredText.innerText = `Scene ${index}`;
-
       card.appendChild(centeredText);
       cardContainer.appendChild(card);
     });
-
-
-    // Code for light field viewer will go here
     const LFimages = [];
     const urlList = [];
     const scenenameList = [];
