@@ -16,7 +16,7 @@
 
       card.addEventListener('click', function() {
         var currentUrl = window.location.href;
-        currentUrl = currentUrl.replace("SLFDB.html","")
+        currentUrl = currentUrl.replace("/SLFDB.html","")
         console.log("Current URL"+currentUrl);
         var newUrl = currentUrl + "/scene_"+index+".html";
         window.location.href = newUrl;
@@ -31,8 +31,10 @@
     const LFimages = [];
     const urlList = [];
     const scenenameList = [];
-    LFimages.push(`./public/images/fika_room_2/f001.png`); urlList.push("fika_1"); scenenameList.push("2K LF");
-    LFimages.push(`./public/images/fika_room_2/f001.png`); urlList.push("fika_2"); scenenameList.push("0.5K LF");
+    LFimages.push(`./public/images/scene_0/f001.png`); urlList.push("/LF_Scene_0.html"); scenenameList.push("LF Scene 0");
+    LFimages.push(`./public/images/scene_3/f001.png`); urlList.push("/LF_Scene_3.html"); scenenameList.push("LF Scene 3");
+    LFimages.push(`./public/images/scene_6/f001.png`); urlList.push("/LF_Scene_6.html"); scenenameList.push("LF Scene 6");
+    LFimages.push(`./public/images/scene_9/f001.png`); urlList.push("/LF_Scene_9.html"); scenenameList.push("LF Scene 9");
     
     const cardContainerLF = document.getElementById('card-container-lf');
   
@@ -43,10 +45,11 @@
 
       card.addEventListener('click', function() {
         var currentUrl = window.location.href;
+        currentUrl = currentUrl.replace("/SLFDB.html","")
         var newUrl = currentUrl + urlList[index];
+        console.log(newUrl);
         window.location.href = newUrl;
       });
-
       const centeredText = document.createElement('div');
       centeredText.classList.add('centered-text');
       centeredText.innerText = scenenameList[index];
@@ -55,44 +58,3 @@
       cardContainerLF.appendChild(card);
     });
   });
-  
-
-  /*
-  $(document).ready(function() {
-    $('#button_flowers').on('click',()=>{
-        var currentUrl = window.location.href;
-        var newUrl = currentUrl + "flowers"
-        window.location.href = newUrl;
-    });
-    $('#button_fence').on('click',()=>{
-        var currentUrl = window.location.href;
-        var newUrl = currentUrl + "fence"
-        window.location.href = newUrl;
-    });
-    $('#button_fountain').on('click',()=>{
-        var currentUrl = window.location.href;
-        var newUrl = currentUrl + "fountain"
-        window.location.href = newUrl;
-    });
-    $('#button_fika_1').on('click',()=>{
-        var currentUrl = window.location.href;
-        var newUrl = currentUrl + "fika_1"
-        window.location.href = newUrl;
-    });
-    $('#button_fika_2').on('click',()=>{
-        var currentUrl = window.location.href;
-        var newUrl = currentUrl + "fika_2"
-        window.location.href = newUrl;
-    });
-    $('#button_library').on('click',()=>{
-        var currentUrl = window.location.href;
-        var newUrl = currentUrl + "library"
-        window.location.href = newUrl;
-    });
-    $('#button_l_building').on('click',()=>{
-        var currentUrl = window.location.href;
-        var newUrl = currentUrl + "l_building"
-        window.location.href = newUrl;
-    });
-});
-*/
