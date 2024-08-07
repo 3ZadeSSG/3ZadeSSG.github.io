@@ -7291,3 +7291,13 @@ span{
 .footer{
   background-color: #323133;
 }
+
+
+
+.collapsible-content {
+  display: none;
+}
+.collapsible-title {
+  cursor: pointer;
+  color: #ffffff;
+}
