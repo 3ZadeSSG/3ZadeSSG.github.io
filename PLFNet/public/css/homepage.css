@@ -132,7 +132,19 @@
 
 
 
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Add some space between items */
+  margin: 0 auto;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: auto; /* Adjust based on content width */
+}
+img, video {
+  width: 400px;
+}
 
 
 
